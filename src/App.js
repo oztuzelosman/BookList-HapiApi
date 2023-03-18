@@ -15,23 +15,23 @@ function App() {
     <div>
       <Button primary outline rounded onClick={handleClick}>
         <GiAbstract008 />
-        App
+        Osman
       </Button>
       <Button secondary outline rounded onMouseEnter={handleClick}>
         <GiAbstract016 />
-        Mpp
+        Oztuzel
       </Button>
       <Button success outline rounded>
         <GiAbstract024 />
-        Kpp
+        Siirt
       </Button>
       <Button wise outline rounded>
         <GiAbstract032 />
-        qpp
+        Konya
       </Button>
       <Button danger outline rounded>
         <GiAbstract040 />
-        Tpp
+        Coding
       </Button>
     </div>
   );
