@@ -12,7 +12,7 @@ const handleClick = () => {
 
 function App() {
   return (
-    <div>
+    <div className=" grid grid-cols-3 grid-rows-1 p-5">
       <Button primary outline rounded onClick={handleClick}>
         <GiAbstract008 />
         Osman
