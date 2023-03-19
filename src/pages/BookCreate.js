@@ -1,17 +1,35 @@
+import { useState } from "react";
+import BookImage from "../api";
+//
 import Button from "../components/Button";
 //
-import { GiAbstract024 } from "react-icons/gi";
+import { RiHeartAddFill } from "react-icons/ri";
 //
 function BookCreate() {
+  const [inputVal, setInputVal] = useState("");
+
+  const getInputChange = (event) => {
+    const val = event.target.value;
+    setInputVal(val);
+  };
+  const searchOnSubmit = (event) => {
+    event.preventDefault();
+    BookImage(inputVal);
+  };
+
   return (
-    <form className=" flex flex-1  bg-purple-400 px-2.5 py-5">
+    <form
+      onSubmit={searchOnSubmit}
+      className=" flex flex-1  bg-purple-400 px-2.5 py-5"
+    >
       <input
         className="flex-1 border rounded-lg text-lg px-3 py-0.5 ml-3"
         type="text"
         placeholder="Create a new book"
+        onChange={getInputChange}
       />
-      <Button wise rounded className="flex px-5 py-5 text-lg">
-        <GiAbstract024 />
+      <Button wise rounded className="flex p-3 text-lg">
+        <RiHeartAddFill />
         BookCreate
       </Button>
     </form>
