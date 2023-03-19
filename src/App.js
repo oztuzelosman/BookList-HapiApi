@@ -2,7 +2,7 @@ import BookCreate from "./pages/BookCreate";
 
 function App() {
   return (
-    <div className="flex mx-5 my-2 ">
+    <div className="flex m-0 ">
       <BookCreate />
     </div>
   );
