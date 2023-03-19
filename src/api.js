@@ -11,7 +11,7 @@ const BookImage = async (term) => {
     }
   );
 
-  // console.log(response.data);
+  console.log(response.data);
   return response.data;
 };
 export default BookImage;

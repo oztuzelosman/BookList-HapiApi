@@ -1,11 +1,10 @@
 import { useState } from "react";
-import BookImage from "../api";
 //
 import Button from "../components/Button";
 //
 import { RiHeartAddFill } from "react-icons/ri";
 //
-function BookCreate() {
+function BookCreate({ createBooks }) {
   const [inputVal, setInputVal] = useState("");
 
   const getInputChange = (event) => {
@@ -14,7 +13,7 @@ function BookCreate() {
   };
   const searchOnSubmit = (event) => {
     event.preventDefault();
-    BookImage(inputVal);
+    createBooks(inputVal);
   };
 
   return (
