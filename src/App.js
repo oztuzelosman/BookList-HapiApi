@@ -12,24 +12,24 @@ const handleClick = () => {
 
 function App() {
   return (
-    <div className=" grid grid-cols-3 grid-rows-1 p-5">
-      <Button primary outline rounded onClick={handleClick}>
+    <div className=" grid grid-cols-5 grid-rows-1 p-5">
+      <Button primary rounded onClick={handleClick}>
         <GiAbstract008 />
         Osman
       </Button>
-      <Button secondary outline rounded onMouseEnter={handleClick}>
+      <Button secondary rounded onMouseEnter={handleClick}>
         <GiAbstract016 />
         Oztuzel
       </Button>
-      <Button success outline rounded>
+      <Button success rounded>
         <GiAbstract024 />
         Siirt
       </Button>
-      <Button wise outline rounded>
+      <Button wise rounded>
         <GiAbstract032 />
         Konya
       </Button>
-      <Button danger outline rounded>
+      <Button danger rounded>
         <GiAbstract040 />
         Coding
       </Button>
